@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Car Payment</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+        <link rel='stylesheet' type="text/css" href="carPayment.css"/>
+        <script type="text/javascript" charset="utf-8" src="carPayment.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    </head>
+    <body>
+        <form id="loan">
+Loan Amount: <textarea rows="1" cols="10" id="amount" >
+</textarea>
+APR: <textarea rows="1" cols="10" id="apr" >
+</textarea>
+N: <textarea rows="1" cols="10" id="n">
+</textarea>
+Payment: <textarea rows="1" cols="10" id="payment" >
+</textarea>
+Final Amount: <textarea rows="1" cols="10" id="final" >
+</textarea>
+Interest Paid: <textarea rows="1" cols="10" id="interest" >
+</textarea>
+<input type="button" onclick="computePayment(amount.value,apr.value,n.value)" value="Compute Payment">
+ </form>
+    </body>
+</html>
